@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-centre {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.75rem;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+}
+
+p {
+    padding-top: 30px;
+}
+
+.container {
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+
+
+.chicken {
+    background-color: pink;
+    border: 1px solid black;
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.beef {
+    background-color: red;
+    border: 1px solid black;
+    width: 150px;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.sushi {
+    background-color: yellow;
+    border: 1px solid black;
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
