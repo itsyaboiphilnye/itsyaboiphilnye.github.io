@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#header-nav {
+    background-color: rgb(135, 132, 132);
+}
+
+h3 {
+    background-color: rgb(135, 132, 132);
+}
+#chicken-container{
+    background-color: rgb(175, 172, 172);
+    border: solid black 1px;
+    padding: 15px;
+}
+
+#beef-container {
+    background-color: rgb(175, 172, 172);
+    border: solid black 1px;
+    padding: 15px;
+}
+
+#sushi-container {
+    background-color: rgb(175, 172, 172);
+    border: solid black 1px;
+    padding: 15px;
+}
+
+
+
+#btt-btn {
+    background-color: white;
+    width: 100%;
+}
